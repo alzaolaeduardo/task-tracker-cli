@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/task-tracker-cli.domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/task-tracker-cli.domain.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/task-tracker-cli.domain.test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/task-tracker-cli.domain.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/use-cases/task-tracker-cli.use-cases.main.iml" filepath="$PROJECT_DIR$/.idea/modules/use-cases/task-tracker-cli.use-cases.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/use-cases/task-tracker-cli.use-cases.test.iml" filepath="$PROJECT_DIR$/.idea/modules/use-cases/task-tracker-cli.use-cases.test.iml" />
     </modules>
   </component>
 </project>

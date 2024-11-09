@@ -1,5 +1,6 @@
 package dev.elazaolap.tasktrackercli.domain.task;
 
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskId;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

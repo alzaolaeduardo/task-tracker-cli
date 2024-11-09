@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "task-tracker-cli"
-include("app", "list", "utilities", "domain")
+include("app", "list", "utilities", "domain", "use-cases")

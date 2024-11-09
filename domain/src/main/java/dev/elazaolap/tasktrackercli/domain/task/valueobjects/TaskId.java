@@ -1,4 +1,4 @@
-package dev.elazaolap.tasktrackercli.domain.task;
+package dev.elazaolap.tasktrackercli.domain.task.valueobjects;
 
 import java.util.UUID;
 
@@ -13,7 +13,7 @@ public final class TaskId extends TaskProperties<String> {
         try {
             UUID.fromString(value);
             return true;
-        } catch (IllegalArgumentException e) {
+        } catch (Exception e) {
             return false;
         }
     }

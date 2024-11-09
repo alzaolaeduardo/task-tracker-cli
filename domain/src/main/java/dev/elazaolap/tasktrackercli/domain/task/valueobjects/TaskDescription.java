@@ -1,4 +1,4 @@
-package dev.elazaolap.tasktrackercli.domain.task;
+package dev.elazaolap.tasktrackercli.domain.task.valueobjects;
 
 public final class TaskDescription extends TaskProperties<String> {
 

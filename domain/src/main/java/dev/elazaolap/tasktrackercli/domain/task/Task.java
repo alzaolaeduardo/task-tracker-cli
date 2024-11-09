@@ -1,5 +1,10 @@
 package dev.elazaolap.tasktrackercli.domain.task;
 
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.Status;
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskDescription;
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskId;
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskStatus;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -17,12 +22,12 @@ public class Task {
         this.taskId = taskId;
     }
 
-    public Task(String taskId, String taskDescription) {
+    public Task(TaskId taskId, TaskDescription taskDescription) {
         this (
                 new TaskStatus(Status.TODO.getValue()),
                 LocalDateTime.now(),
-                new TaskDescription(taskDescription),
-                new TaskId(taskId)
+                taskDescription,
+                taskId
         );
     }
 

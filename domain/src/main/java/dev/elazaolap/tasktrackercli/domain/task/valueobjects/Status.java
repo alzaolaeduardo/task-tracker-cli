@@ -1,4 +1,4 @@
-package dev.elazaolap.tasktrackercli.domain.task;
+package dev.elazaolap.tasktrackercli.domain.task.valueobjects;
 
 import java.util.HashMap;
 import java.util.Map;

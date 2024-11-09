@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c03fdbd-760f-405a-8273-a5f954c0394d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskProperties.java" afterDir="false" />
+    <list default="true" id="7c03fdbd-760f-405a-8273-a5f954c0394d" name="Changes" comment="feat: create Task domain model with unit tests&#10;&#10;- Added Task model to represent domain logic.&#10;- Defined attributes and methods relevant to the Task domain.&#10;- Implemented unit tests to validate Task model functionality.">
       <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskDescriptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskStatusTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/src/main/java/dev/ealzaolap/tasktrackercli/usecases/task/CreateTaskUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/src/main/java/dev/ealzaolap/tasktrackercli/usecases/task/valueobjects/SaveTaskResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/src/main/java/dev/ealzaolap/tasktrackercli/usecases/task/valueobjects/TaskOperationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/src/test/java/dev/ealzaolap/tasktrackercli/usecases/task/CreateTaskUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/src/test/java/dev/ealzaolap/tasktrackercli/usecases/task/InMemoryTaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/valueobjects/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/valueobjects/TaskDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/valueobjects/TaskId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/valueobjects/TaskProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/elazaolap/tasktrackercli/domain/task/valueobjects/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskDescriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskDescriptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/elazaolap/tasktrackercli/domain/task/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +40,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -52,15 +61,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alzaolaeduardo"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -86,6 +101,12 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:alzaolaeduardo/task-tracker-cli.git",
+    "accountId": "f9859e78-2b43-40bc-9ff9-6dd82a946c8c"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -99,6 +120,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.CreateTaskUseCaseTest.executor": "Run",
+    "Gradle.CreateTaskUseCaseTest.shouldCreateTask.executor": "Run",
+    "Gradle.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskAlreadyExists.executor": "Run",
+    "Gradle.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskIdIsNull.executor": "Run",
     "Gradle.TaskDescriptionTest.executor": "Run",
     "Gradle.TaskIdTest.executor": "Run",
     "Gradle.TaskStatusTest.executor": "Run",
@@ -108,7 +133,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "feature/create-task",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/eduardoalzaola/Projects/task-tracker-cli/domain",
+    "last_opened_file_path": "/Users/eduardoalzaola/Projects/task-tracker-cli/use-cases",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -119,6 +144,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/use-cases" />
       <recent name="$PROJECT_DIR$/domain" />
       <recent name="$PROJECT_DIR$/task" />
     </key>
@@ -126,11 +152,12 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dev.ealzaolap.tasktrackercli.usecases.task" />
       <recent name="dev.elazaolap.tasktrackercli.domain.task" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TaskTest">
-    <configuration name="TaskDescriptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskAlreadyExists">
+    <configuration name="CreateTaskUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,9 +168,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":use-cases:test" />
             <option value="--tests" />
-            <option value="&quot;dev.elazaolap.tasktrackercli.domain.task.TaskDescriptionTest&quot;" />
+            <option value="&quot;dev.ealzaolap.tasktrackercli.usecases.task.CreateTaskUseCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +181,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TaskIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CreateTaskUseCaseTest.shouldCreateTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,9 +192,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":use-cases:test" />
             <option value="--tests" />
-            <option value="&quot;dev.elazaolap.tasktrackercli.domain.task.TaskIdTest&quot;" />
+            <option value="&quot;dev.ealzaolap.tasktrackercli.usecases.task.CreateTaskUseCaseTest.shouldCreateTask&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +205,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TaskStatusTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskAlreadyExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,9 +216,33 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":use-cases:test" />
             <option value="--tests" />
-            <option value="&quot;dev.elazaolap.tasktrackercli.domain.task.TaskStatusTest&quot;" />
+            <option value="&quot;dev.ealzaolap.tasktrackercli.usecases.task.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskAlreadyExists&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskIdIsNull" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":use-cases:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.ealzaolap.tasktrackercli.usecases.task.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskIdIsNull&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,10 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskAlreadyExists" />
+        <item itemvalue="Gradle.CreateTaskUseCaseTest" />
+        <item itemvalue="Gradle.CreateTaskUseCaseTest.shouldNotCreateTaskWhenTaskIdIsNull" />
+        <item itemvalue="Gradle.CreateTaskUseCaseTest.shouldCreateTask" />
         <item itemvalue="Gradle.TaskTest" />
-        <item itemvalue="Gradle.TaskStatusTest" />
-        <item itemvalue="Gradle.TaskDescriptionTest" />
-        <item itemvalue="Gradle.TaskIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,11 +303,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731155013221</updated>
-      <workItem from="1731155014325" duration="8052000" />
+      <workItem from="1731155014325" duration="12084000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: create Task domain model with unit tests&#10;&#10;- Added Task model to represent domain logic.&#10;- Defined attributes and methods relevant to the Task domain.&#10;- Implemented unit tests to validate Task model functionality.">
+      <option name="closed" value="true" />
+      <created>1731165394989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731165394989</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: create Task domain model with unit tests&#10;&#10;- Added Task model to represent domain logic.&#10;- Defined attributes and methods relevant to the Task domain.&#10;- Implemented unit tests to validate Task model functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create Task domain model with unit tests&#10;&#10;- Added Task model to represent domain logic.&#10;- Defined attributes and methods relevant to the Task domain.&#10;- Implemented unit tests to validate Task model functionality." />
   </component>
 </project>

@@ -1,5 +1,7 @@
 package dev.elazaolap.tasktrackercli.domain.task;
 
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskDescription;
+import dev.elazaolap.tasktrackercli.domain.task.valueobjects.TaskId;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,15 +12,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TaskTest {
 
-    private String commonTaskId;
-    private String commonTaskDescription;
+    private TaskId commonTaskId;
+    private TaskDescription commonTaskDescription;
     private Task taskOne;
     private Task taskTwo;
 
     @BeforeEach
     void setUp() {
-        this.commonTaskId = UUID.randomUUID().toString();
-        this.commonTaskDescription = "SAME TASK";
+        this.commonTaskId = new TaskId(UUID.randomUUID().toString());
+        this.commonTaskDescription = new TaskDescription("SAME TASK");
 
         taskOne = new Task(this.commonTaskId, this.commonTaskDescription);
         taskTwo = new Task(this.commonTaskId, this.commonTaskDescription);
@@ -42,7 +44,7 @@ class TaskTest {
     @Test
     void shouldNotBeEqual(){
         taskOne = new Task(this.commonTaskId, this.commonTaskDescription);
-        taskTwo = new Task(this.commonTaskId, "OTHER TASK");
+        taskTwo = new Task(this.commonTaskId, new TaskDescription("OTHER TASK"));
 
         assertNotEquals(taskOne, taskTwo);
         assertNotEquals(taskOne.hashCode(), taskTwo.hashCode());
